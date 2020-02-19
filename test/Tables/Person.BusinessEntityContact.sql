@@ -7,7 +7,7 @@ CREATE TABLE [Person].[BusinessEntityContact] (
 		[PersonID]             [int] NOT NULL,
 		[ContactTypeID]        [int] NOT NULL,
 		[rowguid]              [uniqueidentifier] NOT NULL ROWGUIDCOL,
-		[ModifiedDate]         [datetime] NOT NULL,
+		[ModifiedDatess]         [datetime] NOT NULL,
 		CONSTRAINT [PK_BusinessEntityContact_BusinessEntityID_PersonID_ContactTypeID]
 		PRIMARY KEY
 		CLUSTERED
