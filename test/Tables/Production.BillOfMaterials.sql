@@ -6,7 +6,7 @@ CREATE TABLE [Production].[BillOfMaterials] (
 		[BillOfMaterialsID]     [int] IDENTITY(1, 1) NOT NULL,
 		[ProductAssemblyID]     [int] NULL,
 		[ComponentID]           [int] NOT NULL,
-		[StartDate]             [datetime] NOT NULL,
+		[StartDatess]             [datetime] NOT NULL,
 		[EndDate]               [datetime] NULL,
 		[UnitMeasureCode]       [nchar](3) COLLATE SQL_Latin1_General_CP1_CI_AS NOT NULL,
 		[BOMLevel]              [smallint] NOT NULL,
