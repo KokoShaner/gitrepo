@@ -4,7 +4,7 @@ SET ANSI_PADDING ON
 GO
 CREATE TABLE [HumanResources].[Employee] (
 		[BusinessEntityID]      [int] NOT NULL,
-		[NationalIDNumber]      [nvarchar](15) COLLATE SQL_Latin1_General_CP1_CI_AS NOT NULL,
+		[NationalIDNumber]      [nvarchar](19) COLLATE SQL_Latin1_General_CP1_CI_AS NOT NULL,
 		[LoginID]               [nvarchar](256) COLLATE SQL_Latin1_General_CP1_CI_AS NOT NULL,
 		[OrganizationNode]      [hierarchyid] NULL,
 		[OrganizationLevel]     AS ([OrganizationNode].[GetLevel]()),
