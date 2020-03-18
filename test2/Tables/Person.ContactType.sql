@@ -6,6 +6,7 @@ CREATE TABLE [Person].[ContactType] (
 		[ContactTypeID]     [int] IDENTITY(1, 1) NOT NULL,
 		[Name]              [dbo].[Name] NOT NULL,
 		[ModifiedDate]      [datetime] NOT NULL,
+		[dr]                [nchar](10) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
 		CONSTRAINT [PK_ContactType_ContactTypeID]
 		PRIMARY KEY
 		CLUSTERED
