@@ -14,6 +14,7 @@ CREATE TABLE [Sales].[SpecialOffer] (
 		[MaxQty]             [int] NULL,
 		[rowguid]            [uniqueidentifier] NOT NULL ROWGUIDCOL,
 		[ModifiedDate]       [datetime] NOT NULL,
+		[a]                  [nchar](10) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
 		CONSTRAINT [PK_SpecialOffer_SpecialOfferID]
 		PRIMARY KEY
 		CLUSTERED
