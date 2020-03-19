@@ -9,6 +9,7 @@ CREATE TABLE [Sales].[Store] (
 		[Demographics]         [xml](CONTENT [Sales].[StoreSurveySchemaCollection]) NULL,
 		[rowguid]              [uniqueidentifier] NOT NULL ROWGUIDCOL,
 		[ModifiedDate]         [datetime] NOT NULL,
+		[asd]                  [nchar](10) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
 		CONSTRAINT [PK_Store_BusinessEntityID]
 		PRIMARY KEY
 		CLUSTERED
