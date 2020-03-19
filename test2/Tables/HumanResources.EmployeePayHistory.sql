@@ -1,3 +1,7 @@
+ALTER DATABASE [AdventureWorks2014_3]
+ SET COMPATIBILITY_LEVEL = 80
+GO
+
 SET ANSI_NULLS ON
 SET QUOTED_IDENTIFIER ON
 SET ANSI_PADDING ON
@@ -10,6 +14,7 @@ CREATE TABLE [HumanResources].[EmployeePayHistory] (
 		[ModifiedDate]         [datetime] NOT NULL,
 		[sd]                   [nchar](10) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
 		[d]                    [nchar](10) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+		[sdff]                 [nchar](10) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
 		CONSTRAINT [PK_EmployeePayHistory_BusinessEntityID_RateChangeDate]
 		PRIMARY KEY
 		CLUSTERED

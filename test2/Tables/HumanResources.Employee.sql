@@ -1,10 +1,14 @@
+ALTER DATABASE [AdventureWorks2014_3]
+ SET COMPATIBILITY_LEVEL = 80
+GO
+
 SET ANSI_NULLS ON
 SET QUOTED_IDENTIFIER ON
 SET ANSI_PADDING ON
 GO
 CREATE TABLE [HumanResources].[Employee] (
 		[BusinessEntityID]      [int] NOT NULL,
-		[NationalIDNumber]      [nvarchar](21) COLLATE SQL_Latin1_General_CP1_CI_AS NOT NULL,
+		[NationalIDNumber]      [nvarchar](15) COLLATE SQL_Latin1_General_CP1_CI_AS NOT NULL,
 		[LoginID]               [nvarchar](256) COLLATE SQL_Latin1_General_CP1_CI_AS NOT NULL,
 		[OrganizationNode]      [hierarchyid] NULL,
 		[OrganizationLevel]     AS ([OrganizationNode].[GetLevel]()),
@@ -19,6 +23,7 @@ CREATE TABLE [HumanResources].[Employee] (
 		[CurrentFlag]           [dbo].[Flag] NOT NULL,
 		[rowguid]               [uniqueidentifier] NOT NULL ROWGUIDCOL,
 		[ModifiedDate]          [datetime] NOT NULL,
+		[df]                    [nchar](10) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
 		CONSTRAINT [PK_Employee_BusinessEntityID]
 		PRIMARY KEY
 		CLUSTERED
