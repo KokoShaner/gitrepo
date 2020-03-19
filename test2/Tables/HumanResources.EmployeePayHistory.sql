@@ -9,6 +9,7 @@ CREATE TABLE [HumanResources].[EmployeePayHistory] (
 		[PayFrequency]         [tinyint] NOT NULL,
 		[ModifiedDate]         [datetime] NOT NULL,
 		[sd]                   [nchar](10) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+		[d]                    [nchar](10) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
 		CONSTRAINT [PK_EmployeePayHistory_BusinessEntityID_RateChangeDate]
 		PRIMARY KEY
 		CLUSTERED
