@@ -1,10 +1,14 @@
+ALTER DATABASE [AdventureWorks2014_3]
+ SET COMPATIBILITY_LEVEL = 80
+GO
+
 SET ANSI_NULLS ON
 SET QUOTED_IDENTIFIER ON
 SET ANSI_PADDING ON
 GO
 CREATE TABLE [Person].[Address] (
 		[AddressID]           [int] IDENTITY(1, 1) NOT FOR REPLICATION NOT NULL,
-		[AddressLine1]        [nvarchar](72) COLLATE SQL_Latin1_General_CP1_CI_AS NOT NULL,
+		[AddressLine1]        [nvarchar](60) COLLATE SQL_Latin1_General_CP1_CI_AS NOT NULL,
 		[AddressLine2]        [nvarchar](60) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
 		[City]                [nvarchar](30) COLLATE SQL_Latin1_General_CP1_CI_AS NOT NULL,
 		[StateProvinceID]     [int] NOT NULL,
@@ -12,6 +16,7 @@ CREATE TABLE [Person].[Address] (
 		[SpatialLocation]     [geography] NULL,
 		[rowguid]             [uniqueidentifier] NOT NULL ROWGUIDCOL,
 		[ModifiedDate]        [datetime] NOT NULL,
+		[asd]                 [nchar](10) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
 		CONSTRAINT [PK_Address_AddressID]
 		PRIMARY KEY
 		CLUSTERED
