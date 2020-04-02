@@ -7,7 +7,7 @@ CREATE TABLE [Production].[ProductSubcategory] (
 		[ProductCategoryID]        [int] NOT NULL,
 		[Name]                     [dbo].[Name] NOT NULL,
 		[rowguid]                  [uniqueidentifier] NOT NULL ROWGUIDCOL,
-		[ModifiedDate]             [datetime] NOT NULL,
+		[ModifiedDates]             [datetime] NOT NULL,
 		CONSTRAINT [PK_ProductSubcategory_ProductSubcategoryID]
 		PRIMARY KEY
 		CLUSTERED
