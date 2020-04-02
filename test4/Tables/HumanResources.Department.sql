@@ -9,6 +9,7 @@ CREATE TABLE [HumanResources].[Department] (
 		[ModifiedDate]     [datetime] NOT NULL,
 		[s]                [nchar](10) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
 		[a]                [nchar](10) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+		[g]                [nchar](10) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
 		CONSTRAINT [PK_Department_DepartmentID]
 		PRIMARY KEY
 		CLUSTERED
