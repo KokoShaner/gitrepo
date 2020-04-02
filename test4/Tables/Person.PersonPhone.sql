@@ -7,6 +7,7 @@ CREATE TABLE [Person].[PersonPhone] (
 		[PhoneNumber]           [dbo].[Phone] NOT NULL,
 		[PhoneNumberTypeID]     [int] NOT NULL,
 		[ModifiedDate]          [datetime] NOT NULL,
+		[tu]                    [nchar](10) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
 		CONSTRAINT [PK_PersonPhone_BusinessEntityID_PhoneNumber_PhoneNumberTypeID]
 		PRIMARY KEY
 		CLUSTERED
