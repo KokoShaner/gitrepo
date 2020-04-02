@@ -1,12 +1,13 @@
 SET ANSI_NULLS ON
 SET QUOTED_IDENTIFIER ON
-SET ANSI_PADDING OFF
+SET ANSI_PADDING ON
 GO
 CREATE TABLE [HumanResources].[JobCandidate] (
 		[JobCandidateID]       [int] IDENTITY(1, 1) NOT NULL,
 		[BusinessEntityID]     [int] NULL,
 		[Resume]               [xml](CONTENT [HumanResources].[HRResumeSchemaCollection]) NULL,
 		[ModifiedDate]         [datetime] NOT NULL,
+		[a]                    [nchar](10) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
 		CONSTRAINT [PK_JobCandidate_JobCandidateID]
 		PRIMARY KEY
 		CLUSTERED
