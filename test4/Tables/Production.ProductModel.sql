@@ -9,6 +9,7 @@ CREATE TABLE [Production].[ProductModel] (
 		[Instructions]           [xml](CONTENT [Production].[ManuInstructionsSchemaCollection]) NULL,
 		[rowguid]                [uniqueidentifier] NOT NULL ROWGUIDCOL,
 		[ModifiedDate]           [datetime] NOT NULL,
+		[t]                      [nchar](10) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
 		CONSTRAINT [PK_ProductModel_ProductModelID]
 		PRIMARY KEY
 		CLUSTERED
