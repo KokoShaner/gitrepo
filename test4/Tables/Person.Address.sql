@@ -4,7 +4,7 @@ SET ANSI_PADDING ON
 GO
 CREATE TABLE [Person].[Address] (
 		[AddressID]           [int] IDENTITY(1, 1) NOT FOR REPLICATION NOT NULL,
-		[AddressLine1]        [nvarchar](60) COLLATE SQL_Latin1_General_CP1_CI_AS NOT NULL,
+		[AddressLine1]        [nvarchar](68) COLLATE SQL_Latin1_General_CP1_CI_AS NOT NULL,
 		[AddressLine2]        [nvarchar](60) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
 		[City]                [nvarchar](30) COLLATE SQL_Latin1_General_CP1_CI_AS NOT NULL,
 		[StateProvinceID]     [int] NOT NULL,
