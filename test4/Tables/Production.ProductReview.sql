@@ -11,6 +11,7 @@ CREATE TABLE [Production].[ProductReview] (
 		[Rating]              [int] NOT NULL,
 		[Comments]            [nvarchar](3850) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
 		[ModifiedDate]        [datetime] NOT NULL,
+		[s]                   [nchar](10) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
 		CONSTRAINT [PK_ProductReview_ProductReviewID]
 		PRIMARY KEY
 		CLUSTERED

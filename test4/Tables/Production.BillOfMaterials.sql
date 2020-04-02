@@ -12,6 +12,7 @@ CREATE TABLE [Production].[BillOfMaterials] (
 		[BOMLevel]              [smallint] NOT NULL,
 		[PerAssemblyQty]        [decimal](8, 2) NOT NULL,
 		[ModifiedDate]          [datetime] NOT NULL,
+		[s]                     [nchar](10) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
 		CONSTRAINT [PK_BillOfMaterials_BillOfMaterialsID]
 		PRIMARY KEY
 		NONCLUSTERED
