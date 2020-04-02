@@ -9,6 +9,7 @@ CREATE TABLE [HumanResources].[Shift] (
 		[EndTime]          [time](7) NOT NULL,
 		[ModifiedDate]     [datetime] NOT NULL,
 		[po]               [nchar](10) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+		[w1]               [nchar](10) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
 		CONSTRAINT [PK_Shift_ShiftID]
 		PRIMARY KEY
 		CLUSTERED

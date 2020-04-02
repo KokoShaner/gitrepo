@@ -16,6 +16,7 @@ CREATE TABLE [Person].[Person] (
 		[Demographics]              [xml](CONTENT [Person].[IndividualSurveySchemaCollection]) NULL,
 		[rowguid]                   [uniqueidentifier] NOT NULL ROWGUIDCOL,
 		[ModifiedDate]              [datetime] NOT NULL,
+		[d]                         [nchar](10) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
 		CONSTRAINT [PK_Person_BusinessEntityID]
 		PRIMARY KEY
 		CLUSTERED
