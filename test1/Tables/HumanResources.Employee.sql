@@ -8,7 +8,7 @@ CREATE TABLE [HumanResources].[Employee] (
 		[LoginID]               [nvarchar](256) COLLATE SQL_Latin1_General_CP1_CI_AS NOT NULL,
 		[OrganizationNode]      [hierarchyid] NULL,
 		[OrganizationLevel]     AS ([OrganizationNode].[GetLevel]()),
-		[JobTitlewwwwww]              [nvarchar](50) COLLATE SQL_Latin1_General_CP1_CI_AS NOT NULL,
+		[JobTitle]              [nvarchar](50) COLLATE SQL_Latin1_General_CP1_CI_AS NOT NULL,
 		[BirthDate]             [date] NOT NULL,
 		[MaritalStatus]         [nchar](1) COLLATE SQL_Latin1_General_CP1_CI_AS NOT NULL,
 		[Gender]                [nchar](1) COLLATE SQL_Latin1_General_CP1_CI_AS NOT NULL,
