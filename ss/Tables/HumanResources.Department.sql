@@ -6,7 +6,7 @@ CREATE TABLE [HumanResources].[Department] (
 		[DepartmentID]       [smallint] IDENTITY(1, 1) NOT NULL,
 		[Name]               [dbo].[Name] NOT NULL,
 		[GroupName]          [dbo].[Name] NOT NULL,
-		[ModifiedDatess]     [datetime] NOT NULL,
+		[ModifiedDatess_repo]     [datetime] NOT NULL,
 		[d]                  [nchar](10) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
 		CONSTRAINT [PK_Department_DepartmentID]
 		PRIMARY KEY
