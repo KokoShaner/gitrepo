@@ -9,7 +9,7 @@ CREATE TABLE [Person].[Address] (
 		[City]                [nvarchar](30) COLLATE SQL_Latin1_General_CP1_CI_AS NOT NULL,
 		[StateProvinceID]     [int] NOT NULL,
 		[PostalCode]          [nvarchar](15) COLLATE SQL_Latin1_General_CP1_CI_AS NOT NULL,
-		[SpatialLocation]     [geography] NULL,
+		[SpatialLocation_Part]     [geography] NULL,
 		[rowguid]             [uniqueidentifier] NOT NULL ROWGUIDCOL,
 		[ModifiedDate]        [datetime] NOT NULL,
 		CONSTRAINT [PK_Address_AddressID]
