@@ -8,7 +8,7 @@ CREATE TABLE [Sales].[Store] (
 		[SalesPersonID]        [int] NULL,
 		[Demographics]         [xml](CONTENT [Sales].[StoreSurveySchemaCollection]) NULL,
 		[rowguid]              [uniqueidentifier] NOT NULL ROWGUIDCOL,
-		[ModifiedDate]         [datetime] NOT NULL,
+		[ModifiedDateppp]         [datetime] NOT NULL,
 		CONSTRAINT [PK_Store_BusinessEntityID]
 		PRIMARY KEY
 		CLUSTERED
