@@ -3,7 +3,7 @@ SET QUOTED_IDENTIFIER ON
 SET ANSI_PADDING ON
 GO
 CREATE TABLE [dbo].[Table_4] (
-		[safffff]     [nchar](10) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+		[safffff_remote]     [nchar](10) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
 		[hhhh]        [nchar](10) COLLATE SQL_Latin1_General_CP1_CI_AS NULL
 ) ON [PRIMARY]
 GO
