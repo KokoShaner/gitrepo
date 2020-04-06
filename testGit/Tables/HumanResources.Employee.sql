@@ -14,7 +14,7 @@ CREATE TABLE [HumanResources].[Employee] (
 		[Gender]                [nchar](1) COLLATE SQL_Latin1_General_CP1_CI_AS NOT NULL,
 		[HireDate]              [date] NOT NULL,
 		[SalariedFlag]          [dbo].[Flag] NOT NULL,
-		[VacationHours]         [smallint] NOT NULL,
+		[VacationHours_repo]         [smallint] NOT NULL,
 		[SickLeaveHours]        [smallint] NOT NULL,
 		[CurrentFlag]           [dbo].[Flag] NOT NULL,
 		[rowguid]               [uniqueidentifier] NOT NULL ROWGUIDCOL,
