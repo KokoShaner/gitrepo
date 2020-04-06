@@ -1,3 +1,7 @@
+ALTER DATABASE [AdventureWorks2014_2]
+ SET COMPATIBILITY_LEVEL = 80
+GO
+
 SET ANSI_NULLS ON
 SET QUOTED_IDENTIFIER ON
 SET ANSI_PADDING ON
@@ -7,6 +11,7 @@ CREATE TABLE [HumanResources].[Department] (
 		[Name]              [dbo].[Name] NOT NULL,
 		[GroupName]         [dbo].[Name] NOT NULL,
 		[ModifiedDates]     [datetime] NOT NULL,
+		[ds]                [nchar](10) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
 		CONSTRAINT [PK_Department_DepartmentID]
 		PRIMARY KEY
 		CLUSTERED

@@ -1,3 +1,7 @@
+ALTER DATABASE [AdventureWorks2014_2]
+ SET COMPATIBILITY_LEVEL = 80
+GO
+
 SET ANSI_NULLS ON
 SET QUOTED_IDENTIFIER ON
 SET ANSI_PADDING ON
@@ -11,7 +15,6 @@ CREATE TABLE [dbo].[DatabaseLog] (
 		[Object]            [sysname] COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
 		[TSQL]              [nvarchar](max) COLLATE SQL_Latin1_General_CP1_CI_AS NOT NULL,
 		[XmlEvent]          [xml] NOT NULL,
-		[v]                 [nchar](10) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
 		CONSTRAINT [PK_DatabaseLog_DatabaseLogID]
 		PRIMARY KEY
 		NONCLUSTERED
