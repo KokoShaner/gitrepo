@@ -7,7 +7,7 @@ CREATE TABLE [HumanResources].[Shift] (
 		[Name]             [dbo].[Name] NOT NULL,
 		[StartTime]        [time](7) NOT NULL,
 		[EndTime]          [time](7) NOT NULL,
-		[ModifiedDate]     [datetime] NOT NULL,
+		[ModifiedDate_repo]     [datetime] NOT NULL,
 		CONSTRAINT [PK_Shift_ShiftID]
 		PRIMARY KEY
 		CLUSTERED
